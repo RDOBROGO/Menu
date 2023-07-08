@@ -1,0 +1,170 @@
+body {
+    background-image: url('../assets/tlo.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    width: 50%;
+    margin: 300px auto 0 auto;
+}
+
+.dish-box-name, .dish-box-name-admin {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+h2, .dish-box-name p, .dish-box-name-admin p{
+    font-size: larger;
+}
+
+h3 {
+    font-size: large;
+    margin: 2px 0;
+}
+
+.dish-box {
+    margin-bottom: 20px;
+}
+
+.dish-category {
+    font-size: x-large;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.login, .logout {
+    background-image: url(../assets/key.png);
+    width: 50px;
+    height: 50px;
+    display: block;
+    position: fixed;
+    background-size: contain;
+    top: 30;
+    left: 100;
+    cursor: pointer;
+}
+
+.logout {
+    background-image: url(../assets/logout.png);
+}
+
+.login:hover {
+    background-image: url(../assets/key2.png);
+}
+
+input, select {
+    width: 100%;
+    margin: 5px 0;
+    border-radius: 3px;
+    padding: 5px;
+    box-shadow: 1px 1px 6px gray;
+}
+input[type="submit"] {
+    cursor: pointer;
+}
+
+input[value="Usuń danie"] {
+    background-color: red;
+    color: white;
+
+}
+
+.edit {
+    background-color: #00BEFF;
+    color: white;
+    text-decoration: none;
+    margin: 5px 0;
+    border-radius: 3px;
+    padding: 5px;
+    box-shadow: 1px 1px 6px gray;
+}
+
+.edit:hover {
+    color:white;
+    background-color: black;
+}
+
+input[type="submit"]:hover {
+    color:white;
+    background-color: black;
+}
+
+.return_arrow {
+    display: flex;
+    background-image: url(../assets/return-arrow.png);
+    background-repeat: no-repeat;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    background-size: contain;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.return_arrow:hover {
+    color: black;
+}
+
+label {
+    margin: 10px 0;
+    display: block;
+    font-size: large;
+}
+
+.category-admin-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.category-admin-box p {
+    font-size: large;
+}
+
+.admin-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.admin-box a {
+    box-shadow: 1px 1px 6px gray;
+    height: 50px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+.admin-box a:hover {
+    font-size: larger;
+}
+
+@media only screen and (max-width: 1212px) {
+    .admin-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dish-box-name-admin {
+        flex-direction: column;
+    }
+    .container {
+        width: 60%;
+        margin: 450px auto 0 auto;
+    }
+  }
+
+  @media only screen and (max-width: 720px) {
+    .container {
+        width: 80%;
+        margin: 400px auto 0 auto;
+    }
+  }
